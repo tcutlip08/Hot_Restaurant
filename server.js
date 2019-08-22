@@ -24,8 +24,16 @@ app.get("/tables", function (req, res) {
     res.sendFile(path.join(__dirname, "table.html"));
 });
 
+app.get("/api/tables", function (req, res) {
+    res.sendFile(path.join(__dirname, "table.html"));
+});
+
 app.get("/waiting", function (req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, "waiting.html"));
+});
+
+app.get("/api/waiting", function (req, res) {
+    res.sendFile(path.join(__dirname, "table.html"));
 });
 
 app.listen(PORT, function () {
