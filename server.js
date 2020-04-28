@@ -33,7 +33,7 @@ app.get("/waiting", function (req, res) {
 });
 
 app.get("/api/waiting", function (req, res) {
-    res.sendFile(path.join(__dirname, "table.html"));
+    res.sendFile(path.join(__dirname, "waiting.html"));
 });
 
 app.listen(PORT, function () {
